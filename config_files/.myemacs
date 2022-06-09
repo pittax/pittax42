@@ -1,0 +1,32 @@
+;; do not display splash screen - pantalla inicio
+;;              (setq inhibit-splash-screen t)
+;;highlight current line - resalta linea del cursor
+;;(global-hl-line-mode 1)
+;; delete trailing whitespace on save
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+;; overwrite selection when typing
+(delete-selection-mode t)
+;; show current line number
+(setq line-number-mode t)
+;; show current column number
+(setq column-number-mode t)
+;; enable auto pairing of parens, braketts, etc
+(add-hook 'prog-mode-hook #'electric-pair-mode)
+(add-hook 'prog-mode-hook #'display-line-numbers-mode)
+;; (setq-default tab-width 20) - no se que hace
+(setq-default indent-tabs-mode nil)
+(add-to-list 'default-frame-alist '(foreground-color . "white"))
+(add-to-list 'default-frame-alist '(background-color . "black"))
+(add-to-list 'default-frame-alist '(cursor-color . "coral"))
+(setq default-frame-alist
+      '((top . 0) (left . 0)
+        (width . 86) (height . 40)
+        (cursor-color . "white")
+        (cursor-type . box)
+        (foreground-color . "white")
+        (background-color . "black")
+        (font . "-*-Monaco-normal-r-*-*-12-*-*-*-c-*-iso8859-1")))
+
+;;(setq initial-frame-alist '((top . 10) (left . 30)))
+(setq scroll-preserve-screen-position t
+scroll-conservatively 0)
