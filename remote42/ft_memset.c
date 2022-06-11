@@ -18,14 +18,14 @@ void    *ft_memset(void *b, int c, size_t len)
 int main(void)
 {
     char str[] = "Hola planeta tierra";
-    printf("str: %s", str);
+    printf("str: %s\n", str);
 
-    int c = 5;
+    int c = 49;
     size_t len = 3;
     char *str2;
-    
-    str2[] = ft_memset(str, c, len);
-    printf("str2: %s", str2);
+
+    str2 = ft_memset(str, c, len);
+    printf("str2: %s\n", str2);
 
     return 0;
 }

@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gpittalu <gpittalu@student.42barc...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/02 18:27:54 by gpittalu          #+#    #+#             */
-/*   Updated: 2022/06/02 18:27:54 by gpittalu         ###   ########.fr       */
+/*   Created: 2022/06/10 15:17:42 by gpittalu          #+#    #+#             */
+/*   Updated: 2022/06/10 16:16:59 by gpittalu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int ft_alnum(int c)
-{
-    if ((48 <= c) && (c <= 57) ||
-    (65 <= c) && (c <= 90) ||
-    (97 <= c) && (c <= 121))
-        return 1;
-    return 0;
-}
-
-/*
 #include <stdio.h>
-int main(void)
-{
-    int c;
-    int x;
+void	*ft_memset(void *b, int c, size_t len);
 
-    c = 86;
-    x = ft_alnum(c);
-    printf("%d", x);
+void	ft_bzero(void *s, size_t n)
+{
+    ft_memset(s, 0, n);
 }
-*/
+/*
+int	main(void)
+{
+    char	*str;
+    size_t	len;
+    char	*str2;
+
+    printf("ingrese oracion: ");
+    scanf("%s", str);
+    // printf("ingrese numero de espacios: ");
+    // scanf("%zu", &len);
+    len = 4;
+
+    str2 = ft_bzero(str, len);
+    printf("str2: %s\n", str2);
+
+    return (0);
+}*/

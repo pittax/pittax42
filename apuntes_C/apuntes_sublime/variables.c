@@ -32,6 +32,7 @@ unsigned int // solo positivos, por lo tanto aumenta el numero al doble
 %d 		decimal
 %c 		caracter
 %f 		flotante
+%.3f 	flotante con 3 decimales
 %s 		cadena de caracteres (string)
 %u 		sin signo (unsigned)
 %-35s	agrega 35 espacios
