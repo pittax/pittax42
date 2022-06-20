@@ -1,0 +1,80 @@
+return (0)	// por convencion, significa todo ok
+
+
+variables
+
+char -> 1 byte
+int -> 2 o 4 bytes
+float -> 4 bytes
+
+char x = 'a' -> agrega el valor ascii de a (97)
+
+// casting
+int x;
+y = (float)x -> esto asigna a [y] el valor de [x] convertido en float
+
+
+// place holder
+%d 		decimal
+%c 		caracter
+%f 		flotante
+.3f 	flotante con 3 decimales
+%s 		cadena de caracteres (string)
+%u 		sin signo (unsigned)
+%-35s 	agrega 35 espacios
+
+--> si queremos imprimir el '%', colocamos %%
+
+// if ***********
+if (condicion)
+{
+	instruccion para condicion if verdadera
+}
+else if (condicion)
+{
+	instruccion para condicion else if verdadera
+}
+else
+{
+	instruccion para todas las if / else if falsas
+}
+
+// while ********
+int i = 0 //contador
+while (condicion del contador)
+{
+	instruccion para condicion del contador verdadera
+	i++; //incremento del contador
+}
+
+// while infinito
+while(1) //1 es verdadero
+
+// for ***********
+int i; //contador
+for (i = 0; i <= 10; i++) //(valor inicial; condicion, incremento)
+{
+	instruccion para condicion verdadera
+}
+
+// for infinito
+for (i = 0; ; i++)
+
+// break
+break rompe el loop
+
+// argumentos
+// se escriben luego del ejecutable, separado por espacios
+./a.out arg1 arg2 arg3 ... argn
+
+argc -> numero de argumentos (argument count)
+argv -> vector de argumentos (argument vector)
+
+int main(int argc, char *argv[])
+
+ejecucion del programa -> ./a.out abcd efgh
+argv[0] -> ./a.out -> ['.', '/', 'a', '.', 'o', 'u', 't', '\0']
+argv[1] -> abcd -> ['a', 'b', 'c', 'd', '\0']
+argv[2] -> efgh -> ['e', 'f', 'g', 'h', '\0']
+argv[3] -> 0 -> (null)
+

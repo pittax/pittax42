@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int	main(void)
+{
+    char	varA;
+    int		varB;
+    float	varC;
+    char	c;
+
+    varA = 10;
+    varB = 150;
+    varC = 1.25;
+    c = 'a';
+
+    printf("el valor es: %d\n", varA);
+    printf("el valor es: %d\n", varB);
+    printf("el valor es: %.10f\n", varC);
+    printf("c %%d: %d - c %%c: %c\n", c, c);
+    return (0);
+}
