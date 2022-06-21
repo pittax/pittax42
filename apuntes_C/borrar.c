@@ -1,6 +1,7 @@
-Int main(void)
+int  main(void)
 {
-     Int     
-
-return (0);
+     int  x;
+     int  y;
+     
+     return (0);
 }
